@@ -313,7 +313,7 @@ nav a:hover {
 }   
 
 .card .img-1 {
-    background-image: url(/img/Captura\ de\ tela\ 2023-06-21\ 103459.png);
+    background-image: url(../img/Captura\ de\ tela\ 2023-06-21\ 103459.png);
     background-position: center;
     background-size: cover;
     display: flex;
@@ -326,7 +326,7 @@ nav a:hover {
 
 .card .img-2 {
     
-    background-image: url(/img/black-background.png);
+    background-image: url(../img/black-background.png);
     background-position: center;
     background-size: cover;
     width: 400px;
