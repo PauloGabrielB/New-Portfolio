@@ -11,38 +11,41 @@
 </head>
 <body>
 
-<header class="navbar pulsating">
+<header class="navbar background">
 <!-- <h3 class="logo">PG</h3> -->
-<div class="logo">
-    <a href="">PG</a>
+<div class="logo ">
+    <a href="#">PG.DEV</a>
 </div>
     <nav>
         <a href="#sessao02">Sobre</a>
         <a href="#sessao03">Projetos</a>
     </nav>
 </header>
-    <section class="grid-container pulsating" >
+    <section class="grid-container background" >
         <div class="container">
             <h1 class="oi">Oi, me chamo Paulo Gabriel</h1>
             <div class="principal">
                  <h1 class="fullstack">FULLSTACK</h1>
-                 <a href="https://github.com/PauloGabrielB" target="_blank"><button class="btn"><i class="icon fa-brands fa-github"></i></button></a>
-                 <a href="https://www.linkedin.com/in/paulo-gabriel-931534242/" target="_blank"><button class="btn"><i class="icon fa-brands fa-linkedin"></i></button></a>
-                 <a href="/img/Currículo - Paulo Gabriel.pdf" target="_blank"><button class="btn"><i class="icon fa-solid fa-file-lines"></i></button></a>
+                 <a href="https://github.com/PauloGabrielB" target="_blank"><button class="btn-icons"><i class="icon fa-brands fa-github"></i></button></a>
+                 <a href="https://www.linkedin.com/in/paulo-gabriel-931534242/" target="_blank"><button class="btn-icons"><i class="icon fa-brands fa-linkedin"></i></button></a>
+                 <a href="../img/Currículo - Paulo Gabriel.pdf" target="_blank"><button class="btn-icons"><i class="icon fa-solid fa-file-lines"></i></button></a>
             </div>
-            <h1 class="developer">DEVELOPER</h1>
+            <h1 class="developer txt-grad">DEVELOPER</h1>
             <p>Tenho 22 anos, sou desenvolvedor fullstack com 1 ano de experiência trabalhando como freelancer.</p>
+            <div class="bolha">
+                <img src="./img/5eeec15ea8beb9bb0ad2c1246f517c8f.gif" alt="">
+            </div>
         </div>
     </section>
 
     <!-- Sobre -->
 
 <main>
-    <section class="section-2 pulsating" id="sessao02">
+    <section class="section-2" id="sessao02">
         <div class="main-sobre">
-            <h1>Sobre</h1>
-             <h5>Desenvolvedor <span>& Designer</span></h5>
-             <p>Olá, sou Paulo Gabriel, um entusiasta em transição de carreira para o mundo do Desenvolvimento Web. Minha jornada atual está focada na aquisição contínua de habilidades para criar códigos limpos e imagens de design impecável. Estou dedicado a construir websites envolventes, enriquecidos com animações interativas, que não apenas se adaptam perfeitamente a diferentes dispositivos, mas também proporcionam uma experiência altamente interativa e satisfatória para os usuários.</p>
+            <h1>Sobre</h1> 
+             <h5>Desenvolvedor <span>Full-Stack</span></h5>
+             <p>Olá, eu sou o Paulo Gabriel e estou em uma emocionante transição de carreira para o universo do Desenvolvimento Web. Atualmente, estou me dedicando ao curso de Desenvolvimento Full-Stack, com um interesse particular no desenvolvimento tanto front-end quanto back-end. Estou em busca de uma oportunidade para atuar como desenvolvedor.</p>
              <h2>Formação <br><br> <a href="https://digitalcollege.com.br/" target="_blank"> Digital College - </a><span>Full Stack  03/2023 ~ 03/2024</span></h2>
              <h2>Habilidades</h2>
              <i class="fa-brands fa-html5"></i>
@@ -54,8 +57,11 @@
 
     <!-- Projetos -->
 
-    <section class="section-3 pulsating" id="sessao03">
+    <section class="section-3 background" id="sessao03">
+        <div class="textoProjetos">
             <h2>Projetos</h2>
+            <p>Veja os projetos onde coloquei meus conhecimentos em prática.</p>
+        </div>
         <div class="projetos">
             <div class="container-card cc1">
                 <div class="card">
@@ -64,9 +70,9 @@
                     <div class="content">
                     <span class="tittle">Landing Page Foody</span>
                     <p class="desc">
-                        Fui responsável pela criação desse projeto de uma página web, onde tive o cuidado constante de seguir boas práticas de desenvolvimento de software, demonstrando assim minha expertise como um desenvolvedor web.
+                        Fui o encarregado de criar esse projeto de página web. Durante todo o processo, me certifiquei de seguir as melhores práticas de desenvolvimento de software, mostrando minha experiência como desenvolvedor web.
                     </p>
-                    <button href="" class="card-btn">
+                    <button href="" class="btn-card">
                         <a href="https://paulogabrielb.github.io/Landing-Page-Foody/" target="_blank">Conferir</a>
                     </button>
                 </div>
@@ -76,16 +82,14 @@
             <div class="container-card cc2">
                 <div class="card">
                     <div class="img-2">
-                        <span class="material-symbols-outlined">
-                            progress_activity
-                            </span>
+                      
                     </div>
                     <div class="content">
                     <span class="tittle">Em Breve</span>
                     <p class="desc">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid eos perferendis esse illo! Cupiditate, deserunt corporis, quae dicta neque quas dolores expedita, eos voluptates cumque consectetur totam rem numquam vel.
                     </p>
-                    <button href="" class="card-btn">
+                    <button href="" class="card-btn"  id="btn">
                         <a href=" " target="_blank">Conferir</a>
                     </button>
                     </div> 
@@ -93,6 +97,7 @@
             </div>
         </div>
     </section>
+    
 <script src="/js/script.js"></script>
 <script src="https://kit.fontawesome.com/637b6f39bb.js" crossorigin="anonymous"></script>
 </body>

@@ -7,6 +7,7 @@
     font-family: 'Open Sans', sans-serif;
     box-sizing: border-box;
     text-decoration: none;
+    color: var(--light);
 }
 
 :root{
@@ -38,7 +39,7 @@ html {
     background-color: var(--black)
 }
 .backpulse {
-    background: linear-gradient(270deg, #000000, #000000, #080808, #141414, #131312, #fbff00);
+    color: linear-gradient(270deg, #000000, #000000, #080808, #141414, #131312, #fbff00);
         background-size: 1200% 1200%;
     
         -webkit-animation: AnimationName 30s ease infinite;
@@ -104,11 +105,9 @@ nav {
     padding-right: 800px;
 }
 .logo a {
-    justify-content: center;
-    font-weight: 400;
+    
     display: flex;
     color: var(--light);
-    text-shadow: 0 0 8px;
 }
 nav {
     display: flex;
@@ -148,14 +147,22 @@ nav a:hover {
     display: flex;
     font-size: 60px;
     padding-left: 5px;
+    
+}
+.txt-grad {
+    background: #cf0c13;
+    background: repeating-linear-gradient(270deg, #00dbff, #001cff, #7700ff, #a300ff, #ff00f5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
 }
 .developer {
     font-size: 100px;
     height: 100px;
     line-height: 60px;
     transition: 0.5s;
-    text-shadow: 0 0 8px;
     color: var(--light);
+    padding-top: 5px;
 }
 .principal {
     display: flex;
@@ -166,11 +173,11 @@ nav a:hover {
     display: flex;
     width: 80px;
     padding-left: 30px;
-    
 }
-
 .container {
-    margin-left: 200px;
+    /* margin-left: 200px; */
+    width: 600px;
+    height: 250px;
 }
 .container p {
     display: flex;
@@ -189,56 +196,66 @@ nav a:hover {
     font-size: 40px;
     cursor: pointer;
     background-color: transparent;
+    padding-left: 10px;
 }
 .icon:hover {
     color: var(--light);
     text-shadow: 0 0 8px;
     transition: 0.3s;
 }
-.btn {
+.btn-icons {
     transition: 0.5s;
 }
-.btn:hover {
+.btn-icons:hover {
     transform: translateY(-10px);
     transition: 0.5s ease 0s;
 }
+.bolha{
+display: flex;
+align-items: center;
+justify-content: end;
+padding-right: 450px;
+padding-top: 250px;
+}
+
 .section-2 {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 100vh;
+    height: 700px;
+    background: var(--black);
 }
-
 .main-sobre {
     width: 800px;
     height: 450px;
-    background-color: #00000044;
     backdrop-filter: blur(20px);
-    box-shadow: 0 0 10px rgba(88, 88, 88, 0.377);
+    background-color: #00000064;
+    box-shadow: 0 0 10px rgb(36, 39, 37);
     border-radius: 16px;
     margin-bottom: 100px;
     text-align: center;
     color: var(--light);
+    z-index: 2;
 }
 .main-sobre h1 {
     text-align: center;
-    padding: 20px;
+    padding: 15px;
     font-size: 40px;
 }
 .main-sobre h5 {
     color: var(--light);
-    letter-spacing: 2px;
+    margin-bottom: 20px;
     font-size: 20px;
-    margin-bottom: 25px;
-    text-transform: capitalize;
 }
 .main-sobre span {
-    color: rgb(0, 247, 255);
-    text-shadow: 0 0 8px;
+    background: #cf0c13;
+    background: repeating-linear-gradient(270deg,  #006eff, #7700ff, #a300ff, #ff00f5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .main-sobre p {
-    font-size: 15px;
+    font-size: 16px;
     width: 700px;
     text-align: center;
     padding-left: 100px;
@@ -254,6 +271,7 @@ nav a:hover {
 .main-sobre a:hover {
     color: rgb(255, 0, 191);
     text-shadow: 0 0 8px;
+    transition: .2s;
 }
 .main-sobre i {
     font-size: 30px;
@@ -264,22 +282,28 @@ nav a:hover {
 .fa-html5:hover {
     color: rgb(255, 81, 0);
     text-shadow: 0 0 5px;
+    transition: .2s;
 }
 .fa-css3-alt:hover {
     color: #00a2ff;
     text-shadow: 0 0 5px;
+    transition: .2s;
 }
 .fa-js:hover {
     color: var(--yellow);
     text-shadow: 0 0 5px;
+    transition: .2s;
 }
 .fa-react:hover {
     color: #00a2ff;
     text-shadow: 0 0 5px;
+    transition: .2s;
 }
+
 .section-3 {
     width: 100%;
-    height: 100vh;
+    height: 800px;
+
 }
 .section-3 h2 {
     color: var(--light);
@@ -291,6 +315,17 @@ nav a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.textoProjetos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 15px;
+    padding: 30px;
+}
+.textoProjetos p {
+    color: var(--grey);
 }
 .container-card {
     display: flex;
@@ -305,32 +340,31 @@ nav a:hover {
 .card {
     overflow: hidden;
     border-radius: 16px;
-    max-width: 400px;
-    height: 430px;
-    background-color: #00000044;
+    max-width: 350px;
+    height: 420px;
+    background-color: #00000049;
     backdrop-filter: blur(20px);
-    box-shadow: 0 0 10px rgba(88, 88, 88, 0.377);
-}   
+    box-shadow: 0 0 10px rgb(36, 39, 37);
+    z-index: 2;
+}
 
 .card .img-1 {
-    background-image: url(../img/Captura\ de\ tela\ 2023-06-21\ 103459.png);
+    background-image: url(../img/Captura\ de\ tela\ 2023-08-28\ 145052.png);
     background-position: center;
     background-size: cover;
     display: flex;
-    width: 400px;
+    width: 350px;
     height: 200px;
     align-items: center;
     justify-content: center;
 }
-
-
 .card .img-2 {
     
-    background-image: url(../img/black-background.png);
+    background-image: url(../img/b8717641f46cdfdced2c86e984f07c11.gif);
     background-position: center;
     background-size: cover;
-    width: 400px;
-    height: 200px;
+    width: 350px;
+    height: 430px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -357,22 +391,78 @@ nav a:hover {
     font-size: 13px;
     font-weight: 100;
     opacity: .7;
+    padding-bottom: 15px;
 }
-.card-btn {
-    width: 120px;
-    height: 40px;
-    font-size: 18px;
-    margin: 20px;
+.btn-card {
+    position: relative;
+    padding: 10px 20px;
+    border-radius: 7px;
+    border: 1px solid rgb(255, 255, 255);
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
     background: transparent;
-    border: solid 2px var(--light);
-    border-radius: 10px;
-    color:var(--light);
-
-}
-.card-btn:hover {
-    box-shadow: 0 0 8px;
-    color: var(--light);
-}
-.card-btn a {
-    color: var(--light);
-}
+    color: #fff;
+    overflow: hidden;
+    box-shadow: 0 0 0 0 transparent;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+  }
+  
+  .btn-card:hover {
+    background: repeating-linear-gradient(270deg,  #006eff, #7700ff, #a300ff, #ff00f5);
+    box-shadow: 0 0 30px 5px rgba(71, 0, 236, 0.815);
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    border: #67E0E1;
+  }
+  
+  .btn-card:hover::before {
+    -webkit-animation: sh02 0.5s 0s linear;
+    -moz-animation: sh02 0.5s 0s linear;
+    animation: sh02 0.5s 0s linear;
+  }
+  
+  .btn-card::before {
+    content: '';
+    display: block;
+    width: 0px;
+    height: 86%;
+    position: absolute;
+    top: 7%;
+    left: 0%;
+    opacity: 0;
+    background: #fff;
+    box-shadow: 0 0 50px 30px #fff;
+    -webkit-transform: skewX(-20deg);
+    -moz-transform: skewX(-20deg);
+    -ms-transform: skewX(-20deg);
+    -o-transform: skewX(-20deg);
+    transform: skewX(-20deg);
+  }
+  
+  @keyframes sh02 {
+    from {
+      opacity: 0;
+      left: 0%;
+    }
+  
+    50% {
+      opacity: 1;
+    }
+  
+    to {
+      opacity: 0;
+      left: 100%;
+    }
+  }
+  
+  .btn-card:active {
+    box-shadow: 0 0 0 0 transparent;
+    -webkit-transition: box-shadow 0.2s ease-in;
+    -moz-transition: box-shadow 0.2s ease-in;
+    transition: box-shadow 0.2s ease-in;
+  }
